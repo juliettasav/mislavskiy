@@ -1,0 +1,254 @@
+/*!
+Theme Name: Mislavskiy
+Theme URI: http://underscores.me/
+Author: Yuliia Savdeieva
+Author URI: http://underscores.me/
+Description: Тема для mislavskiy.com
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mislavskiy
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Mislavskiy is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+body.page-id-31 {
+    background: #d9d8da;
+}
+
+body.page-id-34, body.archive, body.page-id-38 {
+    background: #fff;
+}
+
+
+body.page-id-38 {
+    background: #fff;
+}
+
+body.single-post {
+    background: #d9d8da;
+}
+.post-thumbnail img {
+    height: auto;
+}
+
+.author > .site-content > .content-area > .site-main > .page-header > h1 {
+    color: white;
+}
+
+.not-found {
+    padding-bottom: 150px;
+}
+
+input {
+    outline: none;
+}
+
+/* .not-found > .container > header > .row > .col-sm-12 > h1 {
+    color: white;
+}
+
+.not-found > .container > .page-content > p {
+    color: white;
+} */
+
+.next.page-numbers {
+    display: inline-block !important;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    background: url(/wp-content/themes/mislavskiy/assets/img/arrow_r.svg) center center no-repeat;
+    background-size: contain;
+    font-size: 0;
+    
+}
+
+.prev.page-numbers {
+    display: inline-block !important;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    background: url(/wp-content/themes/mislavskiy/assets/img/arrow_l.svg) center center no-repeat;
+    background-size: contain;
+    font-size: 0;
+    
+}
+
+.pagination > .nav-links {
+    display: inline-block;
+    height: 40px;
+    background-color: #e8e8e9;
+    padding: 2px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.pagination {
+    display: inline-block;
+   
+    background-color: #e8e8e9;
+    padding: 2px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.page-numbers, .dots {
+    display: none;
+}
+
+.page-numbers.current {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+textarea.form-control.input-question {
+    height: 100px;
+}
+/* EVENT CALENDAR   */
+
+
+.tribe-events-ical.tribe-events-button, .tribe-events-button.tribe-no-param,  {
+    display: none;
+}
+
+.tribe-bar-disabled {
+    display: none;
+}
+
+.tribe-events-event-meta:first-child {
+    border-top: none;
+}
+
+.event-address > .tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix > .tribe-events-meta-group.tribe-events-meta-group-details {
+    display: none;
+}
+
+.event-address > .tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix > .tribe-events-meta-group.tribe-events-meta-group-organizer {
+    display: none;
+}
+
+.tribe-events-single-section-title {
+    display: none;
+}
+
+.event-address .tribe-events-venue-map {
+    display: none;
+} 
+
+.tribe-events-event-image img {
+    height: auto;
+}
+
+body.single-tribe_events {
+    background: none;
+    background-color: #fff;
+}
+
+.article-content h2  {
+    font-size: 1.4em;
+}
+
+.article-content h3 {
+    margin-bottom: 0;
+}
+
+#map-area .primary {
+    display: none;
+}
+
+#map-area .tribe-events-meta-group-venue {
+    display: none;
+}
+
+.facebook-share {
+    display: inline-block;
+}
+
+.article-txt .tribe-events-single-event-title {
+    display: none;
+}
+
+.article-txt h1 strong {
+    
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.tribe-events-nav-pagination {
+    display: none;
+}
+
+.single-tribe_events .top_image {
+    margin-top: -50px;
+}
+
+/* FORMS */
+
+#wpcf7-f152-p38-o1 .wpcf7-response-output {
+    display: none !important;
+}
+
+#wpcf7-f152-p38-o2 .wpcf7-response-output {
+    display: none !important;
+}
+
+/* ANSWER CUSTOMERS */
+
+.answers-list {
+    margin: 60px;
+}
+
+.answers-list h2 {
+    text-align: center;
+}
+
+.hrf-faq-list article {
+    padding: 0px 20px;
+    padding-top: 18px;
+    padding-bottom: 1px;
+    margin: 0;
+    background: #f4f4f5;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hrf-faq-list article h3 {
+    font-weight: 500;
+}
+
+.hrf-faq-list article:last-child {
+    opacity: 0;
+}
+
+.dpsp-network-btn.dpsp-facebook.dpsp-no-label.dpsp-first {
+    width: 40px;
+    height: 40px;
+}
+
+.dpsp-network-btn.dpsp-twitter.dpsp-no-label.dpsp-last {
+    width: 40px;
+    height: 40px;
+}
+
+.dpsp-column-3.dpsp-has-spacing .dpsp-networks-btns-wrapper li {
+    width: auto;
+}
+
+.dpsp-network-icon {
+    filter: grayscale(1) contrast(1.5);
+}
+
+#wpcf7-f157-p38-o2 .wpcf7-response-output.wpcf7-mail-sent-ok {
+    display: none;
+}
+
+
