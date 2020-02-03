@@ -38,7 +38,7 @@ get_header();
 			<?php 
 
 			$pages = array(
-				'show_all'     => false, // показаны все страницы участвующие в пагинации
+				'show_all'     => true, // показаны все страницы участвующие в пагинации
 				'end_size'     => 0,     // количество страниц на концах
 				'mid_size'     => 0,     // количество страниц вокруг текущей
 				'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
@@ -59,8 +59,8 @@ get_header();
 			?>
 			<span>
 			Страница
-					<?php the_posts_pagination( $pages ); ?>
-			из <?php echo "$current_pages"; ?>
+					<?php the_posts_pagination( $pages );  ?>
+			из <?php echo ceil($bloggood_ru_pages / 6) ?>
             </div>
 		</span>
             <div class="col-md-7 blog-search-col">
@@ -101,12 +101,12 @@ get_header();
 				<div class="col-sm-12 blog-page-col">
 				<?php	$bloggood_ru_pages = wp_count_posts();     
 					$bloggood_ru_pages = $bloggood_ru_pages->publish;
-					$current_pages = ceil($bloggood_ru_pages / 9);
+					$current_pages = ceil($bloggood_ru_pages / 3);
 			?>
 			<?php 
 
 			$pages = array(
-				'show_all'     => false, // показаны все страницы участвующие в пагинации
+				'show_all'     => true, // показаны все страницы участвующие в пагинации
 				'end_size'     => 0,     // количество страниц на концах
 				'mid_size'     => 0,     // количество страниц вокруг текущей
 				'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
@@ -127,8 +127,9 @@ get_header();
 			?>
 			<span>
 			Страница
-					<?php the_posts_pagination( $pages ); ?>
-			из <?php echo "$current_pages"; ?>
+				 <?php  the_posts_pagination( $pages ); ?>
+			из
+			<?php echo ceil($bloggood_ru_pages / 6) ?> 
 				</div>
 </div>		
     </div>

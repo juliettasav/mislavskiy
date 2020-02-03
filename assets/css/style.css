@@ -159,11 +159,15 @@ blockquote:after {
   background-color: #2e2e2e;
 }
 .card {
+  height: 600px;
   background: #fff;
   border: none;
   border-radius: 2px !important;
   margin-bottom: 20px;
+  overflow: hidden;
 }
+
+
 .card .card-img-top a img {
   border-radius: 2px;
   width: 100%;
@@ -238,7 +242,7 @@ footer {
 .bg_footer .footer-logo {
   background: url(/wp-content/themes/mislavskiy/assets/img/logo.png) top left no-repeat;
   background-size: contain;
-  padding-left: 100px;
+  padding-left: 110px;
   margin-bottom: 240px;
 }
 .bg_footer .footer-left {
@@ -359,6 +363,7 @@ footer {
   background: url(/wp-content/themes/mislavskiy/assets/img/arrow_h1.png) 0px 5px no-repeat;
   left: 50%;
   top: 19%;
+  color: #fff !important;
 }
 #testimonial {
   background: #dddfe2 url(/wp-content/themes/mislavskiy/assets/img/bg_h3.gif) repeat-x;
@@ -386,6 +391,7 @@ footer {
   background: url(/wp-content/themes/mislavskiy/assets/img/arrow_h2.png) 0px 0px no-repeat;
   left: 38%;
   bottom: 0;
+  color: #000 !important;
 }
 #book {
   padding: 40px 0;
@@ -414,8 +420,7 @@ footer {
 }
 #press .carousel-item {
   padding-left: 300px;
-  min-height: 400px;
-  background: url(/wp-content/themes/mislavskiy/assets/img/img_h6.jpg) 0 40px no-repeat;
+
 }
 #press .press-logo {
   position: absolute;
@@ -428,6 +433,16 @@ footer {
 #press .press-logo img {
   margin-top: 10%;
   width: 80%;
+}
+
+@media (min-width: 991.98px) {
+  #testimonial {
+    height: 873px !important;
+  }
+
+  #testimonial #carouselTestimonial {
+    height: 480px;
+  }
 }
 @media only screen and (max-width: 1199.98px) {
   #showcase .showcase-left {
@@ -460,6 +475,7 @@ footer {
   #about .about-right {
     margin-top: 40px;
   }
+ 
   #testimonial .carousel-item {
     min-height: 300px;
   }
@@ -1037,6 +1053,7 @@ table.price th {
   margin: 40px 0 20px -100px;
   padding-left: 100px;
   background: url(/wp-content/themes/mislavskiy/assets/img/arrow_social.png) 0 -28px no-repeat;
+  color: #212529;
 }
 .psy-head {
   margin-top: 40px;
@@ -1227,13 +1244,11 @@ aside.widget-area {
   transform: translateY(15px);
 }
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-    @media {
-      aside.widget-area { 
-        display: inline-block;
-        transform: translateY(15px); 
-        }
-    }
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { 
+	aside.widget-area { 
+		display: inline-block;
+		transform: translateY(15px); 
+	}
 }
 
 .anh > .posted-on > a > .entry-date.published {
@@ -1310,4 +1325,104 @@ aside.widget-area {
   .single-post .top_image {
     margin-top: -74px;
   }
+}
+
+
+/* VIDEO CAROUSEL */
+
+
+.carousel-control-next-icon.black{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+
+}
+
+.carousel-control-prev-icon.black {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+
+}
+
+.carousel-inner.video {
+  width: 80%;
+  margin: auto;
+}
+
+.carousel.video.slide {
+  padding-top: 25px;
+}
+
+.carousel.video.slide .carousel-indicators {
+  bottom: -20px !important;
+}
+
+.carousel-inner.video .carousel-item {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  background: #fff !important;
+
+}
+
+.carousel-item-container {
+  display: flex;
+
+}
+
+.carousel-item-container .embed-responsive {
+  width: 40% !important;
+}
+
+.carousel-item-container p {
+  text-align: justify;
+  padding-left: 20px;
+  width: 50%;
+}
+
+/* @media (min-width: 991px) {
+  .carousel-inner.video .carousel-item {
+    height: 515px;
+  }
+} */
+
+
+
+@media (max-width: 990px) {
+  .carousel-item-container {
+    align-items: unset;
+  }
+  .carousel-item-container .embed-responsive {
+    width: 55% !important;
+}
+  .carousel-item-container p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 551px) {
+
+  .carousel-item-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-item-container .embed-responsive {
+    width: 100% !important;
+  }
+
+  .carousel-item-container p {
+   width: 100%;
+   padding-top: 10px;
+   padding-left: 0;
+
+  }
+
+
+
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+
+
 }

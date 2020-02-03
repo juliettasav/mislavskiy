@@ -125,6 +125,8 @@
         });
     </script>
 
+
+
     <script>
         $(function() {
             // Smooth Scrolling
@@ -144,6 +146,15 @@
     </script>
 
     <script src="/wp-content/themes/mislavskiy/js/customizer.js"></script>
+
+    <script>
+
+$('.carousel.video').carousel({
+    interval: 0
+});
+
+
+</script>
 
     
 

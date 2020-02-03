@@ -32,7 +32,8 @@ $mail->Body    = '' .$name . ' оставил заявку, его телефо�
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    header('location 404.php');
+//    header('location: 404.php');
+    mail($to,$subject,#)
 } else {
     header('location: http://mislavskiy.com/');
 }
